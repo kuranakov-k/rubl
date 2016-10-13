@@ -1,0 +1,665 @@
+.clearfix::after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+body {
+font-family: "Trebuchet MS", Tahoma, sans-serif;
+font-size: 11px;
+padding: 0;
+margin: 0;
+}
+/*HEADER*/
+.header-main {
+	background-color: #f4f4f4;
+	border-top: 8px solid #3f3f3f;
+}
+.header-container {
+	position: relative;
+	min-width: 1000px;
+	max-width: 1280px;
+	margin: 0 auto;
+	z-index: 10;
+}
+.header-top {
+	position: relative;
+	left: 18%;
+	width: 82%;
+	margin-bottom: 3px;
+}
+.basket {
+	position: absolute;
+	right: 0;
+	margin-right: 16%;
+	top: -8px;
+	width: 213px;
+	height: 65px;
+	background: url("../img/basket-bg.png") right top no-repeat;
+}
+.basket p {
+	position: absolute;
+	bottom: 0;
+	left: 80px;
+}
+.basket a {
+	color: #fff;
+	font-family: Tahoma;
+	font-weight: normal;
+	font-size: 11px;
+}
+.basket .btn-basket {
+	position: absolute;
+	top: 8px;
+	right: 23px;
+}
+.arrow-down {
+	position: relative;
+	left: 10px;
+}
+.header-social {
+float: right;
+font-size: 0;
+margin-right: 2%;
+}
+.header-social a {
+	display: inline-block;
+	width: 24px;
+	height: 23px;
+	margin-right: 4px;
+}
+.header-social .social-ok {
+	background: url("../img/ico-ok.png") no-repeat;
+}
+.header-social .social-vk {
+	background: url("../img/ico-social.png") no-repeat;
+}
+.header-social .social-fb {
+	background: url("../img/ico-social.png") -27px 0 no-repeat;
+}
+.header-social .social-twitter {
+	background: url("../img/ico-twitter.png") no-repeat;
+}
+.header-top {
+	position: relative;
+	background: #3f3f3f url("../img/footer-top-bg.png") no-repeat 0px 0px;
+	height: 33px;
+}
+
+.top-menu{
+	margin: 0;
+	padding: 0;
+	margin-left: 40px;
+	font-size: 0;
+	list-style: none;
+	float: left;
+}
+.top-menu li {
+	float: left;
+}
+.top-menu a {
+	display: block;
+	padding: 6px 10px;
+	color: #fff;
+	font-size: 13px;
+	line-height: 18px;
+}
+
+/*==============header-mid==============*/
+.header-mid {
+	font-size: 12px;
+	font-weight: normal;
+	max-width: 1280px;
+	min-width: 1000px;
+	margin: 0 auto;
+}
+.header-logo, .header-contacts, .header-order, .header-delivery {
+	float: left
+}
+.header-logo {
+	width: 20%;
+	text-align: center;
+	box-sizing: border-box;
+	padding-left: 1%;
+	margin-top: 7px;
+}
+.header-contacts {
+	width: 47%;
+	margin-top: 7px;
+}
+.header-contacts ul {
+	list-style: none;
+	margin-top: 0;
+}
+.header-contacts-tel{
+	float: left;
+	width: 30%;
+	padding-left: 3%;
+}
+.header-contacts-tel li {
+	display: block;
+	padding-left: 19px;
+	background: url("../img/sprite-tel.png") no-repeat;
+
+	font-size: 13px;
+	line-height: 16px;
+}
+.header-contacts-tel .contact-mts {
+	background-position: 0 0px;
+}
+.header-contacts-tel .contact-heart {
+	background-position: 0 -16px;
+}
+.header-contacts-tel .contact-smile {
+	background-position: 0 -32px;
+}
+.header-contacts-tel .contact-tel {
+	background-position: 0 -48px;
+}
+
+ .header-contacts-web {
+	 float: left;
+	 border-left: 1px solid #d4d4d4;
+	 width: 20%;
+	 padding-left: 5%;
+ }
+ .header-contacts-web li {
+ 	display: block;
+ 	padding-left: 19px;
+ 	background: url("../img/sprite-icq.png") no-repeat;
+
+ 	font-size: 13px;
+ 	line-height: 16px;
+ }
+ .header-contacts-web a {
+	 text-decoration: none;
+	 color: #000;
+ }
+ .header-contacts-web a:hover {
+	text-decoration: underline;
+	color: #0066cc;
+ }
+ .header-contacts-web .contact-icq {
+ 	background-position: 0 1px;
+ }
+ .header-contacts-web .contact-skype {
+ 	background-position: 0 -31px;
+ }
+ .header-contacts-web .contact-mail {
+ 	background-position: 0 -47px;
+ }
+
+ .header-contacts-time {
+	float: left;
+	width: 28%;
+	border-left: 1px solid #d4d4d4;
+	padding-left: 6%;
+}
+.header-contacts-time li:nth-child(2n) {
+ 	display: block;
+ 	padding-left: 19px;
+
+ 	font-size: 13px;
+ 	line-height: 16px;
+ }
+.header-contacts-time .contact-time {
+ 	background: url("../img/ico-time.png") no-repeat;
+ }
+.header-contacts-time .contact-currency {
+ 	background: url("../img/ico-currency.png") no-repeat;
+ }
+
+.header-order {
+	font-family: Tahoma, sans-serif;
+	font-size: 11px;
+	line-height: 18px;
+	padding-top: 20px;
+	width: 15%;
+}
+
+.header-delivery {
+	width: 18%;
+	box-sizing: border-box;
+	margin-top: 30px;
+	padding-left: 50px;
+	background: url("../img/ico-car.png") no-repeat;
+	background-position: 5px 10px;
+}
+.header-delivery a {
+	font-size: 12px;
+	line-height: 18px;
+	color: #0066cc;
+}
+/*===============header-bottom===============*/
+.header-bottom {
+	border-top: 1px solid #d4d4d4;
+	border-bottom: 1px solid #d4d4d4;
+	margin-bottom: 33px;
+}
+.header-bottom-container {
+	min-width: 1000px;
+	max-width: 1280px;
+	margin: 0 auto;
+}
+.header-menu {
+	float: left;
+}
+.header-menu li {
+	position: relative;
+	display: inline-block;
+	padding-left: 30px;
+}
+.header-menu li::before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	margin-top: -1px;
+	left: 12px;
+	border: 2px solid #000;
+	border-radius: 50%;
+}
+.header-menu li:first-child {
+	padding-left: 0;
+}
+.header-menu li:first-child::before {
+	display: none;
+}
+.header-menu a {
+	font-size: 14px;
+	line-height: 24px;
+	color: #0066cc;
+}
+.header-menu a:hover {
+	text-decoration: none;
+}
+.header-search {
+	position: relative;
+	float: left;
+	padding-top: 10px;
+	margin-left: 7%;
+}
+.header-search input[type="text"] {
+	width: 363px;
+	font-family: "Trebuchet MS";
+	font-size: 14px;
+	padding: 5px;
+	border: none;
+	border-top: 1px solid #d4d4d4;
+	border-left: 1px solid #d4d4d4;
+	border-radius: 5px;
+}
+
+.header-search input[type="text"]::-webkit-input-placeholder {
+	font-family: "Trebuchet MS";
+	font-style: italic;
+	font-size: 14px;
+	line-height: 22px;
+}
+.header-search input[type="text"]:-moz-placeholder {
+	font-family: "Trebuchet MS";
+	font-style: italic;
+	font-size: 14px;
+	line-height: 22px;
+}
+.header-search input[type="text"]:-ms-input-placeholder {
+	font-family: "Trebuchet MS";
+	font-style: italic;
+	font-size: 14px;
+	line-height: 22px;
+}
+.header-search input[type="image"] {
+	position: absolute;
+	top: 17px;
+	right: 7px;
+}
+/*====================CONTENT=======================*/
+.main-container {
+	min-width: 1000px;
+	max-width: 1280px;
+	margin: 0 auto;
+}
+/*====================LEFT-COL=======================*/
+.left-col {
+	float: left;
+	width: 20%;
+}
+.nav-left {
+	width: 83%;
+	padding-left: 17%;
+}
+.nav-left h2 {
+	font-size: 20px;
+	line-height: 24px;
+	font-weight: 400;
+	margin: 0;
+	margin-bottom: 5px;
+	background: url("../img/bottom-border.png") left 23px no-repeat;
+}
+.nav-left ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	margin-bottom: 25px;
+}
+.nav-left a {
+	font-size: 14px;
+	line-height: 22px;
+	color: #0066cc;
+}
+.nav-left .special a {
+	color: #c11103;
+}
+/*==============MEGA-MENU=============*/
+.mega-menu{
+font: bold 11px "Trebuchet MS", sans-serif;
+line-height: 16px;
+font-weight: 400;
+position: relative; /* Required */
+}
+.mega-menu li a {
+display: block;
+color: #0066cc;
+}
+.mega-menu li a:hover, .mega-menu li.mega-hover a {
+	text-decoration: none;
+	background: #f4f4f4;
+}
+.mega-menu li a.dc-mega {
+position: relative;
+}
+.mega-menu.left li a.dc-mega {
+text-align: right;
+}
+
+/* Mega menu container */
+.mega-menu li .sub-container {
+position: absolute; /* Required */
+top: -120px;
+background: #f4f4f4;
+color: #408cd9;
+padding-top: 15px;
+border-left: none;
+min-height: 420px;
+width: 234px;
+
+}
+.mega-menu li .sub-container li {
+	max-width: 185px;
+	padding-left: 30px;
+}
+.mega-menu li .sub-container a {
+	text-decoration: underline;
+}
+.mega-menu li .sub-container a:hover {
+	text-decoration: none;
+}
+.mega-menu li .sub .row {
+width: 100%; overflow: hidden; /* Clear floats */
+}
+.mega-menu li .sub li {
+float: none;
+width: 235px;
+font-size: 1em;
+font-weight: normal;
+margin-bottom: 20px;
+}
+.mega-menu li .sub li.mega-hdr {
+float: left; /* Required */
+margin: 0 5px 10px 5px;
+}
+.mega-menu li .sub a, .mega-menu.left li .sub a {
+float: none;
+color: #408cd9;
+display: block;
+font-family: Tahoma, sans-serif;
+font-size: 11px;
+line-height: 13px;
+font-weight: 700;
+}
+
+.left-col-discount {
+	display: block;
+	position: relative;
+	margin-left: 12%;
+}
+/*====================RIGHT-COL=======================*/
+.right-col {
+	float: right;
+	width: 256px;
+}
+.banner-top a {
+	display: block;
+	margin-bottom: 4px;
+	width: 256px;
+	height: 84px;
+}
+.discount-content {
+	font-family: Tahoma;
+	font-weight: bold;
+	padding-top: 6px;
+	padding-bottom: 1px;
+	text-align: center;
+	background-color: #007118;
+	background: linear-gradient(#2ca445 0%, #007118 50%, #2ca445 100%);
+}
+.discount {
+	width: 240px;
+	margin: 0 auto;
+	padding-top: 10px;
+	background: #fff;
+	border-radius: 5px;
+	margin-bottom: 6px;
+}
+.discount h2 {
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+.discount h2 a {
+	font-size: 12px;
+	line-height: 14px;
+	color: #408cd9;
+}
+.discount-price {
+		font-size: 26px;
+		line-height: 30px;
+		color: #b60705;
+		margin: 0;
+		margin-top: 5px;
+}
+.discount-benifit {
+	font-size: 16px;
+	line-height: 24px;
+	color: #2ca445;
+	margin: 0;
+}
+.discount-price span {
+	font-size: 12px;
+	line-height: 30px;
+	text-decoration: line-through;
+	color: #7e7e7e;
+}
+.discount-time {
+	font-weight: normal;
+	font-size: 11px;
+	line-height: 24px;
+	margin: 0;
+}
+.discount-time span {
+	font-size: 30px;
+}
+/*=====================MAIN-CONTENT==================*/
+.main-content {
+	margin-left: 20%;
+	margin-right: 256px;
+}
+.main-content h1 {
+	font-size: 20px;
+	line-height: 18px;
+}
+.inner-content {
+	margin-right: 2%;
+}
+.content-catalog {
+	width: 100%;
+	border: 0;
+	background: #e0e0e0;
+	margin-bottom: 45px;
+}
+.content-catalog td {
+	background: #fff;
+}
+.product-main {
+	border: 1px solid #fff;
+}
+.product-main:hover {
+	border-top: 1px solid #d81107;
+	border-right: 1px solid #d1817d;
+	border-bottom: 1px solid #d1817d;
+	border-left: 1px solid #d81107;
+	background: #f4f4f4;
+}
+.product-main:hover .catalog-img {
+	opacity: 0.3;
+}
+.product-main:hover .product-info {
+	display: block;
+}
+.product {
+	position: relative;
+	text-align: center;
+	padding: 0 10%;
+}
+.product .compare {
+	margin-top: 0;
+	margin-bottom: 5px ;
+	font-size: 11px;
+	line-height: 18px;
+	color: #7e7e7e;
+	text-align: right;
+}
+.product .compare input {
+	position: absolute;
+}
+.product h2 {
+	margin-top: 0;
+	font-size: 11px;
+	line-height: 12px;
+}
+.product h2 a {
+	color: #3272b0;
+	text-decoration: none;
+}
+.catalog-img {
+	margin-top: 20px;
+}
+.product-price {
+	font-family: Tahoma, sans-serif;
+	font-size: 11px;
+	line-height: 18px;
+
+}
+.product-price span {
+	font-family: "Trebuchet MS";
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 18px;
+	color: #d81107;
+}
+.product-buy {
+	position: relative;
+	display: block;
+	width: 153px;
+	height: 22px;
+	background: url("../img/btn-buy-basket.jpg") 0 0 no-repeat;
+	padding-top: 5px;
+	padding-bottom: 7px;
+	line-height: 22px;
+	margin: 0 auto;
+}
+.product-buy a:hover {
+	text-decoration: none;
+}
+.link-buy {
+	position: absolute;
+	left: 34px;
+	top: -1px;
+	color: #fff;
+}
+.link-basket {
+	position: absolute;
+	top: -1px;
+	right: 14px;
+	color: #3272b0;
+}
+.product-info {
+	position: absolute;
+	top: 70px;
+	left: 20px;
+	display: none;
+	height: 100%;
+	text-align: left;
+	font-size: 11px;
+	line-height: 15px;
+	color: #303030;
+}
+/*========================ABOUT========================*/
+.about {
+	background-color: #f4f4f4;
+	padding: 5px 10px;
+	color: #303030;
+	text-align: justify;
+    margin-bottom: 28px;
+}
+.about h3 {
+	margin: 0;
+	font-family: Tahoma;
+	font-size: 13px;
+	line-height: 18px;
+}
+.about p {
+	text-indent: 3em;
+	font-weight: normal;
+	font-size: 11px;
+	line-height: 14px;
+}
+/*FOOTER*/
+.footer-main {
+    margin-left: 20px;
+}
+.footer-top {
+    height: 72px;
+    box-sizing: border-box;
+    background: #fff url(../img/footer-bg.png) 0 0 repeat-x;
+    padding-top: 20px;
+    margin-bottom: 12px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    padding-left: 30px;
+}
+.footer-logo {
+    float: left;
+    margin-right: 20px;
+}
+.footer-info {
+    margin-top: 5px;
+}
+.footer-bottom {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 12px;
+    min-width: 1000px;
+}
+.footer-bottom ul {
+    margin: 0 auto;
+}
+.footer-bottom li {
+    display: inline-block;
+    font-family: Tahoma;
+    font-size: 10px;
+    line-height: 14px;
+    margin-right: 2%;
+}
+.footer-bottom li a {
+    color: #408cd9;
+}
